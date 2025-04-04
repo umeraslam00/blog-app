@@ -1,14 +1,14 @@
-import config from "./config/config"
+import Header from "./components/Header/Header"
+import Footer from "./components/Footer/Footer"
 
-function App() {
+import React from 'react'
 
-  console.log(config.appwriteURL)
-  
-
+const App = () => {
   return (
-    <>
-     <div>Blog App With React.js</div>
-    </>
+    <div>
+      <Header />
+      <Footer />
+    </div>
   )
 }
 
