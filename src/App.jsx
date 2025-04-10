@@ -26,14 +26,18 @@ const App = () => {
 
   if(loading) {
     return <div>loading...</div>
+  } else {
+
+    return (
+      <div>
+        <Header />
+        <Footer />
+      </div>
+    )
+
   }
 
-  return (
-    <div>
-      <Header />
-      <Footer />
-    </div>
-  )
+  
 }
 
 export default App
