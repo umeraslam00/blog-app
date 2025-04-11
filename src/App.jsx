@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react'
 import { auth } from "./appwrite/auth"
 import { useDispatch } from "react-redux"
 import { login, logout } from "./store/authSlice"
+import { Outlet } from "react-router-dom"
 
 const App = () => {
 
@@ -31,6 +32,7 @@ const App = () => {
     return (
       <div>
         <Header />
+          <Outlet />
         <Footer />
       </div>
     )
